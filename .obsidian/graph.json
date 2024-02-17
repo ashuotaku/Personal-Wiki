@@ -1,0 +1,44 @@
+{
+  "collapse-filter": true,
+  "search": "-tag:#graphHidden -path:Templates  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#journal  ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "tag:#favorite  ",
+      "color": {
+        "a": 1,
+        "rgb": 15904294
+      }
+    },
+    {
+      "query": "tag:#homepage  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -1.4,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.958333333333333,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 52,
+  "scale": 0.0889892578125,
+  "close": true
+}

@@ -1,0 +1,293 @@
+{
+  "main": {
+    "id": "ff30545b009ee0b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "0657fc423d5cfeae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a11a1ccc7228f300",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true
+            }
+          },
+          {
+            "id": "bcb2c5231acf380b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "000 Pinned/🏠 Homepage.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6fa7caea1947fd37",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5c18cbdd978fc72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23936738aea3f720",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🙃 Sidebar.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "0f204be13209361d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "404e37f0f5584cac",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3c1a33f0c5496fc9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 217
+  },
+  "right": {
+    "id": "01c80885edef377f",
+    "type": "split",
+    "children": [
+      {
+        "id": "94d82477d3b81bc5",
+        "type": "tabs",
+        "dimension": 47.3756906077348,
+        "children": [
+          {
+            "id": "bd6a57dbcaf2daa5",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": true,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": -0.8,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.4682213077274803,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "025438ed514a5daf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "39a76bde5f566225",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "486fdb2f39f9ba2c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "b41efa34f62597d2",
+        "type": "tabs",
+        "dimension": 52.62430939226519,
+        "children": [
+          {
+            "id": "ff59cc13c77c5914",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "e75b94f8566f2d9a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {}
+            }
+          },
+          {
+            "id": "9ad4ce13a8bf1bbf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "af473c9fa76613a8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "d470cddf1c34f88c",
+            "type": "leaf",
+            "state": {
+              "type": "trash-explorer",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 280
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "dbfolder:Create a new database table": false,
+      "obsidian-projects:Open projects": false,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "a11a1ccc7228f300",
+  "lastOpenFiles": [
+    "🙃 Sidebar.md",
+    "000 Pinned/🏠 Homepage.md",
+    "🛠️ Practice.md",
+    "README.md",
+    "🧰 Utilities.md",
+    "🧠 Excalibrain.md",
+    "📺 Anime.md",
+    "📥 Inputs.md",
+    "💼 Productivity.md",
+    "👤 Personal.md",
+    "Templates/startup template.md",
+    "001 Goals/my goal.md",
+    "Templates/Goal Template.md",
+    "Templates/Default Template.md",
+    "Templates/Journals/Daily Note Template.md",
+    "Templates/Journals/Monthly Note Template.md",
+    "Templates/Insertion Template/Callout Template.md",
+    "Templates/Input Template/Anime Template.md",
+    "Journal/2024/2024.md",
+    "Journal/2024/2024-Q1/2024-Q1.md",
+    "Journal/2024/2024-Q1/February, 2024/February, 2024.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W07/2024-W07.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W07/2024-02-17.md",
+    "Journal/2024/2024-Q1/February, 2024/2024-W07",
+    "Journal/2024/2024-Q1/February, 2024",
+    "Journal/2024/2024-Q1",
+    "Journal/2024",
+    "Journal/🗓️ Journal.md",
+    "Inputs/📖 Quote Book.md",
+    "Inputs/Youtube/📹 YouTube.md",
+    "000 Goals",
+    "000 Quick Notes",
+    "Pasted image 20240212222426.png",
+    "Attachment Notes",
+    "Attachment Notes/Untitled",
+    "Attachment Notes",
+    "Pasted image 20240206143632.png",
+    "000 Quick Notes"
+  ]
+}

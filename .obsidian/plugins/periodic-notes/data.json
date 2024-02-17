@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": false,
+  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "format": "YYYY/YYYY-[Q]Q/MMMM, YYYY/YYYY-[W]ww/YYYY-MM-DD",
+    "template": "Templates/Journals/Daily Note Template.md",
+    "folder": "Journal",
+    "enabled": true
+  },
+  "weekly": {
+    "format": "YYYY/YYYY-[Q]Q/MMMM, YYYY/YYYY-[W]ww/YYYY-[W]ww",
+    "template": "Templates/Journals/Weekly Note Template.md",
+    "folder": "Journal",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "YYYY/YYYY-[Q]Q/MMMM, YYYY/MMMM, YYYY",
+    "template": "Templates/Journals/Monthly Note Template.md",
+    "folder": "Journal",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "YYYY/YYYY-[Q]Q/YYYY-[Q]Q",
+    "template": "Templates/Journals/Quarterly Note Template.md",
+    "folder": "Journal",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "YYYY/YYYY",
+    "template": "Templates/Journals/Yearly Note Template.md",
+    "folder": "Journal",
+    "enabled": true
+  }
+}

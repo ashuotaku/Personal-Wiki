@@ -1,0 +1,14 @@
+/* Resolves https://www.reddit.com/r/ObsidianMD/comments/p0w0ib/changing_the_colour_of_uncreated_notes_in_graph/ */
+/* Changes color and opacity of uncreated notes. */
+
+.graph-view.color-fill-unresolved {
+    color: #616161;
+    opacity: 0.7;
+}
+.graph-view.color-fill {
+    color: #d66af7;
+    opacity: 1;
+}
+mark{
+    color: rgb(20, 20, 20) !important;
+}

@@ -1,0 +1,18 @@
+{
+  "style": "gradient",
+  "adjustWidthToReadableLineWidth": false,
+  "showInInternalEmbed": true,
+  "showInPopover": true,
+  "bannerDragModifier": "Shift",
+  "enableDragInInternalEmbed": false,
+  "enableDragInPopover": false,
+  "enableLockButton": false,
+  "headerDecor": "shadow",
+  "headerHorizontalAlignment": "left",
+  "headerVerticalAlignment": "edge",
+  "useHeaderByDefault": false,
+  "useTwemoji": false,
+  "showPreviewInLocalModal": true,
+  "autoDownloadPastedBanners": false,
+  "version": "2.0.5-beta"
+}

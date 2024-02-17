@@ -1,0 +1,30 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "moc": "multitext",
+    "episodes": "text",
+    "startDate": "date",
+    "deadline": "date",
+    "completionDate": "date",
+    "excalidraw-plugin": "text",
+    "excalidraw-export-transparent": "checkbox",
+    "excalidraw-mask": "checkbox",
+    "excalidraw-export-dark": "checkbox",
+    "excalidraw-export-padding": "number",
+    "excalidraw-export-pngscale": "number",
+    "excalidraw-link-prefix": "text",
+    "excalidraw-url-prefix": "text",
+    "excalidraw-link-brackets": "checkbox",
+    "excalidraw-onload-script": "text",
+    "excalidraw-linkbutton-opacity": "number",
+    "excalidraw-default-mode": "text",
+    "excalidraw-font": "text",
+    "excalidraw-font-color": "text",
+    "excalidraw-border-color": "text",
+    "excalidraw-css": "text",
+    "excalidraw-autoexport": "checkbox",
+    "excalidraw-iframe-theme": "text"
+  }
+}

@@ -1,0 +1,37 @@
+.sidebar .inline-title{
+    display: none;
+}
+.sidebar .metadata-container{
+    display: none !important;
+}
+
+
+/* .sidebar .mb-button-inner{
+    padding: 20px 10px;
+    width: 90%;
+    font-size:18px;
+    color: white;
+    font-weight: 550;
+    background-color: #7a20e5 !important;
+    margin: 5px;
+    margin-left: 16px;
+} */
+
+div.sidebar{
+    padding-right: 0px !important;
+    padding-top: 0px;
+} 
+.sidebar h3{
+    margin: 0;
+    
+}
+.sidebar h4{
+    margin: 0;
+}
+.sidebar .list-view-ul{
+    margin-left: -13px;
+}
+.sidebar .markdown-preview-sizer{
+    padding-bottom: 0px !important;
+    margin-left: -7px !important;
+}

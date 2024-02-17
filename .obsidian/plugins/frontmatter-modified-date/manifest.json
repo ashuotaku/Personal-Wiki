@@ -1,0 +1,11 @@
+{
+	"id": "frontmatter-modified-date",
+	"name": "Update modified date",
+	"version": "1.3.2",
+	"minAppVersion": "0.15.0",
+	"description": "Automatically update a frontmatter modified date field when you modify your note. This will not use the filesystem time, but only when you modify the file through Obsidian. Optionally store a history of edit times.",
+	"author": "Alan Grainger",
+	"authorUrl": "https://github.com/alangrainger",
+	"fundingUrl": "https://ko-fi.com/alan_",
+	"isDesktopOnly": false
+}

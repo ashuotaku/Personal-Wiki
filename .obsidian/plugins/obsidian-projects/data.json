@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "{{date:YYYY-MM-DD}}",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "tag",
+        "config": {
+          "tag": "#journal",
+          "hierarchy": true
+        }
+      },
+      "newNotesFolder": "Journal",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "name",
+              "path",
+              "aliases",
+              "banner",
+              "date",
+              "banner_icon",
+              "banner_y",
+              "created_at",
+              "Enjoyment",
+              "Exercise",
+              "Good_Deed",
+              "Happy_about",
+              "Meditation",
+              "Mistakes",
+              "modified_at",
+              "Mood",
+              "Regret",
+              "Study",
+              "tags",
+              "Ultradian_Cycles",
+              "Why",
+              "year"
+            ]
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "tags",
+                "operator": "has-any-of",
+                "enabled": true,
+                "value": "[\"journal/dailynote\"]"
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "9eeb3d81-9bba-4c97-a323-6572742c9a3a",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "interval": "month",
+            "checkField": "Meditation"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "6d8de766-867f-46b4-93fc-49d1c2695ae6",
+          "name": "Calendar",
+          "type": "calendar"
+        }
+      ],
+      "id": "c1989022-48d5-4334-a7bf-bc0040c7b53c",
+      "name": "Journals"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

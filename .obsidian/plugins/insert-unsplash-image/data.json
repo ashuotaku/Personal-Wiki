@@ -1,0 +1,16 @@
+{
+  "insertMode": "remote",
+  "orientation": "landscape",
+  "insertSize": "",
+  "imageSize": "large",
+  "frontmatter": {
+    "key": "banner",
+    "valueFormat": "{image-url}",
+    "appendReferral": false
+  },
+  "imageProvider": "unsplash",
+  "proxyServer": "",
+  "pixabayApiKey": "",
+  "insertBackLink": false,
+  "pexelsApiKey": ""
+}

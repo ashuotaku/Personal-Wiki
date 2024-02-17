@@ -1,0 +1,396 @@
+/* === README for MCL Wide Views snippet / Author: Faiz Khuzaimah / twitter: @faizkhuzaimah / github: https://github.com/efemkay
+    Ver 0.9.6 (updated 2023-09-09) - Code refactor to make use predefined variables and more efficient code base
+    - refactor all wide views features. require Obsidian installer v1.1.9.
+    - fixed all issues from previous codebase
+	Version 0.9.4 (updated 2023-07-05)
+	- fixed wide-backlinks not working since Obsidian V1
+	- improved support for Minimal V7
+
+	What is this snippet for?
+	- for any users to use with any theme to complement any missing page/block width control
+	- available cssClass:
+		- wide-page
+        - wide-table
+		- wide-dataview
+		- wide-callout
+		- wide-backlinks
+		- narrow-page
+    - style settings toggle
+		- is-adj-rll with adj-rll-max-width input
+
+    Important Notice
+    - this snippet requires Obsidian installer version (not app version) of 1.1.9 or higher as it requires Electron v21
+
+	Credits
+	- Kevin Powell Youtube channel
+*/
+
+/* === Wide Page === */
+
+    /* -- Main Code - EV & RV -- */
+    body .wide-page { --file-line-width: 100%; }
+
+
+    /* -- Special adjustment for Community Themes */
+
+        /* Minimal */
+        body[class*="minimal-tab-title"] .wide-page {
+            --line-width: 100%;
+            --max-width: 95%;
+            --container-table-width: var(--line-width);
+            --container-table-max-width: var(--max-width);
+        }
+
+        /* AnuPpuccin */
+        /* body .wide-page { --anp-preview-width-pct: 100%; } */
+
+
+/* === Adjustable RLL === */
+    /* cssClass toggle to allow users to adjust the RLL via Style Settings.
+       Obsidian v1.0.0 makes it easier to do adjustable RLL ;) */
+
+	/* -- Main Code - Editing and Reading View -- */
+	body.is-adj-rll .view-content { --file-line-width: var(--adj-rll-max-width); }
+
+
+
+/* === Narrow Page === */
+    /* cssClass YAML to allow users with disabled RLL to introduce RLL per
+       page/note basis. width is following obsidian default setting, or you
+       can change it via MCL's Adjustable RLL */
+
+    /* -- Main Code - Editing and Reading View -- */
+    .narrow-page.markdown-source-view .cm-sizer,
+    .narrow-page.markdown-preview-view .markdown-preview-sizer {
+        max-width: var(--file-line-width);
+        margin-inline: auto;
+    }
+
+
+
+/* === General Setups for Wide Blocks === */
+
+    /* -- Setup for @container -- */
+    :is(.wide-table-global, .wide-dataview-global, .wide-callout-global, .wide-backlinks-global) .markdown-source-view.is-readable-line-width,
+    :is(.wide-table-global, .wide-dataview-global, .wide-callout-global, .wide-backlinks-global) .markdown-preview-view.is-readable-line-width,
+    :is(.wide-table, .wide-dataview, .wide-callout, .wide-backlinks).markdown-source-view.is-readable-line-width,
+    :is(.wide-table, .wide-dataview, .wide-callout, .wide-backlinks).markdown-preview-view.is-readable-line-width {
+        container-name: content-view;
+        container-type: inline-size;
+    }
+
+
+
+/* === Wide Blocks - Wide Table === */
+
+    /* -- Mai.n Code - EV & RV -- */
+    body {
+        --wide-tbl-left-ev-adj: -4rem;
+        --wide-tbl-min-left-ev: 0.5rem;
+        --wide-tbl-width-ev: calc( var(--file-line-width) - var(--wide-tbl-left-ev-adj) );
+    }
+    body:has(.cm-gutters) {
+        --wide-tbl-left-ev-adj: 1rem;
+        --wide-tbl-min-left-ev: 6rem;
+    }
+    @container content-view (width > 50px) {
+        /* editing view */
+        :is(.wide-table-global, .wide-table) .cm-embed-block.cm-table-widget {
+            width: calc(100cqi - 4rem);
+            margin-left: calc( max( 100cqi - var(--wide-tbl-width-ev), var(--wide-tbl-min-left-ev) ) / 2 * -1 ) !important;
+        }
+
+        /* reading view */
+        :is(.wide-table-global .markdown-preview-view, .wide-table.markdown-preview-view) div:has(> table) {
+            width: 100cqi;
+            margin-left: calc( max( 100cqi - var(--file-line-width), 1rem ) / 2 * -1 ) !important;
+        }
+        /* centering the table a bit */
+        :is(.wide-table-global, .wide-table) .cm-embed-block.cm-table-widget table,
+        :is(.wide-table-global .markdown-preview-view, .wide-table.markdown-preview-view) div > table
+            { margin-inline: auto; }
+    }
+
+
+    /* -- Special adjustment for Community Themes */
+
+        /* Minimal, complete re-write for the theme due to many !important used by the theme */
+        body[class*="minimal-tab-title"] {
+            --wide-tbl-left-adj: -4rem;
+            --wide-tbl-width-adj: 2rem;
+        }
+        body[class*="minimal-tab-title"]:has(.cm-gutters) {
+            --wide-tbl-left-adj: -4rem;
+            --wide-tbl-width-adj: 0rem;
+        }
+        body[class*="minimal-tab-title"]:has(.cm-gutters).minimal-theme {
+            --wide-tbl-left-adj: 0rem;
+        }
+        @container content-view (width > 50px) {
+            body[class*="minimal-tab-title"][class*="wide-table-global"] .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget,
+            body[class*="minimal-tab-title"] .wide-table.markdown-source-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget {
+                width: calc(100cqi - 4rem) !important;
+                max-width: 100%;
+                margin-left: calc( var(--wide-tbl-left-adj) / 2 * -1 ) !important;
+            }
+            body[class*="minimal-tab-title"][class*="wide-table-global"] .markdown-preview-view .markdown-preview-sizer div:has(> table),
+            body[class*="minimal-tab-title"] .wide-table.markdown-preview-view .markdown-preview-sizer div:has(> table) {
+                width: calc(100cqi - 2rem - var(--wide-tbl-width-adj) ) !important;
+                max-width: 100%;
+                margin-left: calc( var(--wide-tbl-left-adj) / 2 * -1 ) !important;
+            }
+            /* centering the table a bit */
+            body[class*="minimal-tab-title"][class*="wide-table-global"] .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget table,
+            body[class*="minimal-tab-title"] .wide-table.markdown-source-view .cm-contentContainer.cm-contentContainer .cm-embed-block.cm-table-widget table,
+            body[class*="minimal-tab-title"][class*="wide-table-global"] .markdown-preview-view .markdown-preview-sizer div > table,
+            body[class*="minimal-tab-title"] .wide-table.markdown-preview-view .markdown-preview-sizer div > table
+                { margin-inline: auto; }
+        }
+
+        /* Catppuccin */
+        body[class*="ctp-"].is-adj-rll:not([class*="anp-default"]) { --wide-tbl-left-ev-adj: -8rem; }
+
+
+
+/* === Wide Blocks - Wide Dataview === */
+    /* there are options to enable it (a) per page basis and (b) globally
+       however, editing view is a hackaround */
+
+    /* -- Main Code - EV & RV -- */
+    body {
+        --wide-dv-left-ev-adj: -4rem;
+        --wide-dv-min-left-ev: 0.5rem;
+        --wide-dv-width-ev: calc( var(--file-line-width) - var(--wide-dv-left-ev-adj) );
+    }
+    body:has(.cm-gutters) {
+        --wide-dv-left-ev-adj: 1.7rem;
+        --wide-dv-min-left-ev: 6.5rem;
+    }
+    @container content-view (width > 50px) {
+        :is(.wide-dataview-global, .wide-dataview) .cm-preview-code-block:has(> .block-language-dataview),
+        :is(.wide-dataview-global, .wide-dataview) .cm-preview-code-block:has(> .block-language-dataviewjs) {
+            width: calc(100cqi - 4rem );
+            margin-left: calc( max( 100cqi - var(--wide-dv-width-ev), var(--wide-dv-min-left-ev) ) / 2 * -1 ) !important;
+        }
+        :is(.wide-dataview-global, .wide-dataview) div:has(> .block-language-dataview),
+        :is(.wide-dataview-global, .wide-dataview) div:has(> .block-language-dataviewjs) {
+            width: 100cqi;
+            margin-left: calc( max( 100cqi - var(--file-line-width), 1rem ) / 2 * -1 ) !important;
+        }
+    }
+
+
+    /* -- Special adjustment for Community Themes */
+
+        /* Minimal, complete re-write for the theme */
+        body[class*="minimal-tab-title"] {
+            --wide-dv-width-adj: 2rem;
+        }
+        body[class*="minimal-tab-title"]:has(.cm-gutters) {
+            --wide-dv-left-ev-adj: -4rem;
+            --wide-dv-width-adj: 0rem;
+        }
+        body[class*="minimal-tab-title"]:has(.cm-gutters).minimal-theme {
+            --wide-dv-left-ev-adj: 0rem;
+        }
+        @container content-view (width > 50px) {
+            body[class*="minimal-tab-title"][class*="wide-dataview-global"] .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content .cm-preview-code-block:has(> .block-language-dataview),
+            body[class*="minimal-tab-title"] .wide-dataview.markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content .cm-preview-code-block:has(> .block-language-dataview),
+            body[class*="minimal-tab-title"][class*="wide-dataview-global"] .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content .cm-preview-code-block:has(> .block-language-dataviewjs),
+            body[class*="minimal-tab-title"] .wide-dataview.markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content .cm-preview-code-block:has(> .block-language-dataviewjs) {
+                width: calc(100cqi - 4rem);
+                max-width: 100%;
+                margin-left: calc( var(--wide-dv-left-ev-adj) / 2 * -1 ) !important;
+            }
+            body[class*="minimal-tab-title"][class*="wide-dataview-global"] .markdown-preview-view div:has(> .block-language-dataview),
+            body[class*="minimal-tab-title"] .wide-dataview.markdown-preview-view div:has(> .block-language-dataview),
+            body[class*="minimal-tab-title"][class*="wide-dataview-global"] .markdown-preview-view div:has(> .block-language-dataviewjs),
+            body[class*="minimal-tab-title"] .wide-dataview.markdown-preview-view div:has(> .block-language-dataviewjs) {
+                width: calc(100cqi - 2rem - var(--wide-dv-width-adj) );
+                max-width: 100%;
+                margin-left: calc( var(--wide-dv-left-ev-adj) / 2 * -1 ) !important;
+            }
+            /* centering the table a bit */
+            body[class*="minimal-tab-title"][class*="wide-dataview-global"] .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content table,
+            body[class*="minimal-tab-title"] .wide-dataview.markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content table,
+            body[class*="minimal-tab-title"] .wide-dataview.markdown-preview-view .markdown-preview-sizer div > table {
+                    width: calc( 100% );
+                }
+        }
+
+        /* Catppuccin */
+        body[class*="ctp-"].is-adj-rll:not([class*="anp-default"]) { --wide-dv-left-ev-adj: -8rem; }
+
+
+
+/* === Wide Blocks - Wide Callout === */
+    /* there are options to enable it (a) per page basis and (b) globally
+       however, editing view is a hackaround
+       !important needed because app's default uses it `.markdown-source-view.mod-cm6 .cm-content > *` */
+
+    /* -- Main Code - EV & RV -- */
+    body {
+        --wide-co-left-ev-adj: -3.8rem;
+        --wide-co-min-left-ev: 0.5rem;
+        --wide-co-width-ev-adj: 4rem;
+        --wide-co-width-ev: calc(var(--file-line-width) - var(--wide-co-left-ev-adj) );
+    }
+    body:has(.cm-gutters) {
+        --wide-co-left-ev-adj: 1.7rem;
+        --wide-co-min-left-ev: 6.5rem;
+    }
+    @container content-view (width > 50px) {
+        :is(.wide-callout-global, .wide-callout) .cm-embed-block.cm-callout {
+            width: calc( 100cqi - var(--wide-co-width-ev-adj) );
+            margin-left: calc( max( 100cqi - var(--wide-co-width-ev), var(--wide-co-min-left-ev) ) / 2 * -1 ) !important;
+        }
+        :is(.wide-callout-global, .wide-callout) .markdown-preview-sizer > div:has(> .callout) {
+            width: 100cqi;
+            margin-left: calc( max( 100cqi - var(--file-line-width), 1rem ) / 2 * -1 ) !important;
+        }
+    }
+
+
+    /* -- Special adjustment for Community Themes */
+
+        /* Minimal, complete re-write for the theme */
+        body[class*="minimal-tab-title"] { --folding-toggle: 1; }
+        body.minimal-theme { --folding-toggle: 0; }
+        body.minimal-theme:not(:has(.cm-gutters)) { --folding-toggle: 1; }
+        @container content-view (width > 50px) {
+            body[class*="minimal-tab-title"][class*="wide-callout-global"] .markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content .cm-embed-block.cm-callout,
+            body[class*="minimal-tab-title"] .wide-callout.markdown-source-view .cm-contentContainer.cm-contentContainer .cm-content .cm-embed-block.cm-callout {
+                width: calc(100cqi - 4rem);
+                max-width: 100%;
+                margin-left: calc( var(--folding-offset) * var(--folding-toggle) ) !important;
+            }
+            body[class*="minimal-tab-title"][class*="wide-callout-global"] .markdown-preview-view .markdown-preview-sizer > div:has(> .callout),
+            body[class*="minimal-tab-title"] .wide-callout.markdown-preview-view .markdown-preview-sizer > div:has(> .callout) {
+                width: calc(100cqi - 2rem - 2rem * var(--folding-toggle) );
+                max-width: calc(100% - 0rem);
+                margin-left: calc( var(--folding-offset) * var(--folding-toggle) ) !important;
+            }
+        }
+
+        /* AnuPpuccin */
+        body[class*="anp-"] { --wide-co-width-ev-adj: 3.5rem; }
+
+        /* Catppuccin */
+        body[class*="ctp-"].is-adj-rll:not([class*="anp-default"]) { --wide-co-left-ev-adj: -7.8rem; }
+
+
+
+/* === Wide Blocks - Wide Backlinks === */
+
+    /* -- Main Code - EV & RV -- */
+    body {
+        --wide-bl-left-ev-adj: 4rem;
+        --wide-bl-width-ev: calc(var(--file-line-width) + var(--wide-bl-left-ev-adj) );
+    }
+    @container content-view (width > 50px) {
+        :is(.wide-backlinks-global .markdown-source-view, .wide-backlinks.markdown-source-view) .embedded-backlinks {
+            width: calc(100cqi - 3.5rem);
+            margin-left: calc( max( 100cqi - var(--wide-bl-width-ev), 1rem ) / 2 * -1 );
+        }
+        :is(.wide-backlinks-global .markdown-preview-view, .wide-backlinks.markdown-preview-view) .embedded-backlinks {
+            width: calc(100cqi - 0rem);
+            margin-left: calc( max( 100cqi - var(--file-line-width), 1rem ) / 2 * -1 );
+        }
+    }
+
+
+    /* -- Special adjustment for Community Themes */
+
+        /* Minimal, complete re-write for the theme */
+        body[class*="minimal-tab-title"] {
+            --wide-bl-width-adj: 4rem;
+        }
+        body[class*="minimal-tab-title"]:has(.cm-gutters) {
+            --wide-bl-width-adj: 0rem;
+        }
+        @container content-view (width > 50px) {
+            body[class*="minimal-tab-title"][class*="wide-backlinks-global"] .markdown-source-view .cm-sizer .embedded-backlinks,
+            body[class*="minimal-tab-title"] .wide-backlinks.markdown-source-view .cm-sizer .embedded-backlinks {
+                width: calc(100cqi - 4.5rem);
+                max-width: unset;
+                margin-left: calc( var(--wide-bl-width-adj) / 2 * 1 ) !important;
+            }
+            body[class*="minimal-tab-title"][class*="wide-backlinks-global"] .markdown-preview-view .embedded-backlinks,
+            body[class*="minimal-tab-title"] .wide-backlinks.markdown-preview-view .embedded-backlinks {
+                width: calc( 100cqi - 2rem - var(--wide-bl-width-adj)/2 );
+                margin-left: calc( max( 100cqi - var(--line-width) - var(--wide-bl-width-adj) , 4rem ) / 2 * -1 ) !important;
+            }
+        }
+
+        /* Catppuccin */
+        body[class*="ctp-"].is-adj-rll:not([class*="anp-default"]) { --wide-bl-left-ev-adj: 13.5rem; }
+
+
+
+/* @settings
+
+name: Modular CSS Layout - Wide Views
+id: modular-css-layout-wv
+settings:
+
+	-
+		id: adj-rll-title
+		title: Adjustable RLL Settings
+		description: Control max-width for all page/note by default. RLL must be **enabled**
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: is-adj-rll
+		title: Enable Adjustable RLL
+		description: Add is-adj-rll class to the body element
+		type: class-toggle
+	-
+		id: adj-rll-max-width
+		title: Max Width for Normal Width page
+        description: Can use any unit e.g. px, em, ch
+		type: variable-text
+		default: 700px
+
+    -
+        id: wide-view-title
+        title: Vault-wide toggle for Wide Blocks
+		description: For wide -table/-dataview/-callout/-backlinks. RLL must be **enabled**
+        type: heading
+        level: 2
+        collapsed: true
+	-
+		id: wide-dataview-global
+		title: Enable `wide-dataview` vault-wide
+		description: use `wide-dataview` in yaml to enable only for selected note/page
+		type: class-toggle
+	-
+		id: wide-table-global
+		title: Enable `wide-table` vault-wide
+		description: use `wide-table` in yaml to enable only for selected note/page
+		type: class-toggle
+	-
+		id: wide-callout-global
+		title: Enable `wide-callout` vault-wide
+		description: use `wide-callout` in yaml to enable only for selected note/page
+		type: class-toggle
+	-
+		id: wide-backlinks-global
+		title: Enable `wide-backlinks` vault-wide
+		description: use `wide-backlinks` in yaml to enable only for selected note/page
+		type: class-toggle
+
+    -
+        id: narrow-view-title
+        title: Narrow Page Settings
+		description: Control max-width page/note with cssClass `narrow-page`. RLL must be **disabled**
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: narrow-max-width
+        title: Max Width for Narrow View page (any unit e.g. px, em, ch)
+        type: variable-text
+        default: 750px
+
+*/

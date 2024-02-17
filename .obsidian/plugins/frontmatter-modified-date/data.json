@@ -1,0 +1,13 @@
+{
+  "frontmatterProperty": "modified_at",
+  "momentFormat": "",
+  "excludedFolders": [
+    "Templates"
+  ],
+  "useKeyupEvents": false,
+  "onlyUpdateExisting": false,
+  "timeout": 10,
+  "excludeField": "exclude_modified_update",
+  "appendField": "append_modified_update",
+  "appendMaximumFrequency": "day"
+}
