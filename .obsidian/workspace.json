@@ -93,7 +93,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -251,10 +252,10 @@
   },
   "active": "a11a1ccc7228f300",
   "lastOpenFiles": [
-    "🙃 Sidebar.md",
     "000 Pinned/🏠 Homepage.md",
-    "🛠️ Practice.md",
     "README.md",
+    "🙃 Sidebar.md",
+    "🛠️ Practice.md",
     "🧰 Utilities.md",
     "🧠 Excalibrain.md",
     "📺 Anime.md",

@@ -1,9 +1,25 @@
 ---
 created_at: 2024-02-17T10:29:20+05:30
-modified_at: 2024-02-17T13:32:27+05:30
+modified_at: 2024-02-19T10:25:55+05:30
 ---
 > [!NOTE]
 > My personal obsidian vault showcase so that you can easily replicate this workflow by cloning this repo and you can suggest me for any changes or bugs. Btw, I am noob in git and github and my english is also not that great.
+
+## My Workflow and Organization:
+#### Folders:
+- These are rigid and very limiting therefore I use these very less.
+
+#### Tags:
+- I have turned off this in global graph but use it like folder but they are more efficient than folder as we can put one note in more than one tag. And I use nested tags for organizing my vault. For e.g. if I want to organize my periodic notes I tag them like this: `#journal/dailynote`, `#journal/weeklynote`, `#journal/monthlynote` and so on.
+
+#### Links:
+- These are the best and I use these extensively but my workflow is a little bit different.
+- I add links inside a note only if they are children or friends/siblings note but if I want to add a link for parent note (which is mainly for navigational purpose) I don't add them directly in note as forward links work as child and backward links work as parents, therefore I use dataview to add a link that don't show in the graph but can be used for navigation.
+- For e.g: you can see my periodic notes workflow (which is in Journal Folder) to check how I use links and also check the graph to see how it gets affected by linking (make sure to turn on arrows in display in graph).
+
+#### Other features:
+- I use homepage which is the center of my vault and is directly or indirectly connected to all the notes in my graph and I don't like to see orphan notes therefore I always check that if a certain note can be linked to other or not.
+- I also use a sidebar(automated with dataview) for quick access and with this I also don't rely so much on the folder structure. (I got the sidebar idea from the anytype note taking app.)
 
 ## Roadmap:
 

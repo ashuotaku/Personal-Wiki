@@ -1,12 +1,12 @@
 ---
 created_at: 2024-01-30T11:38:56+05:30
-modified_at: 2024-02-17T13:32:26+05:30
+modified_at: 2024-02-19T10:13:10+05:30
 tags:
   - homepage
   - followup
 banner: https://i.imgur.com/9ZJBvN8.jpg
 banner_y: 0.446
-cssclasses:
+cssclasses: 
 ---
 - [[👤 Personal]] #mcl/list-column
 - [[💼 Productivity]]
