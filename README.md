@@ -2,8 +2,11 @@
 > [!TIP] 
 > ### What's new:
 > Now you can invert image color and make it adaptable with dark theme or light theme using the invert image css snippet:
+>
 > For e.g: `![invert_B](your image)` -> for mostly black image
+>
 > `![invert_W](your image)` -> for mostly white image
+>
 > `![invert_W_C](your image)` or `![invert_B_C](your image)` -> for adding contrast
 
 > [!NOTE]
