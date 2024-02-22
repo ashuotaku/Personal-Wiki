@@ -1,9 +1,13 @@
----
-created_at: 2024-02-17T10:29:20+05:30
-modified_at: 2024-02-19T10:25:55+05:30
----
+
+> [!TIP] 
+> ### What's new:
+> Now you can invert image color and make it adaptable with dark theme or light theme using the invert image css snippet:
+> For e.g: `![invert_B](your image)` -> for mostly black image
+> `![invert_W](your image)` -> for mostly white image
+> `![invert_W_C](your image)` or `![invert_B_C](your image)` -> for adding contrast
+
 > [!NOTE]
-> My personal obsidian vault showcase so that you can easily replicate this workflow by cloning this repo and you can suggest me for any changes or bugs. Btw, I am noob in git and github and my english is also not that great.
+> My personal obsidian vault showcase so that you can easily replicate this workflow by cloning this repo and you can suggest me for any changes or file an issue if there's any bug. Btw, I am noob in git and github and my english is also not that great.
 
 ## My Workflow and Organization:
 #### Folders:
@@ -29,6 +33,7 @@ modified_at: 2024-02-19T10:25:55+05:30
 - [ ] Adding a templater snippet for custom music entries.
 
 ##### Done:
+- [x] Adding invert image css.
 - [x] Easy callout insertion in notes with the help of templater.
 - [x] Adding a templater snippet for creating automated anime notes.
 - [x] Creating a useful sidebar to rely less on the folder usecase.

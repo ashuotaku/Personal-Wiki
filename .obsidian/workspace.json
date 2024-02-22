@@ -32,7 +32,8 @@
               "pinned": true
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,8 +94,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -115,6 +115,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "🙃 Sidebar.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -149,6 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "🙃 Sidebar.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,6 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "🙃 Sidebar.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +204,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "🙃 Sidebar.md"
+              }
             }
           },
           {
@@ -209,7 +214,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "🙃 Sidebar.md"
+              }
             }
           },
           {
@@ -250,7 +257,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a11a1ccc7228f300",
+  "active": "23936738aea3f720",
   "lastOpenFiles": [
     "000 Pinned/🏠 Homepage.md",
     "README.md",
