@@ -15,10 +15,10 @@
   "frontmatter-modified-date",
   "dataview",
   "templater-obsidian",
-  "emoji-shortcodes",
   "quickadd",
   "obsidian-meta-bind-plugin",
   "highlightr-plugin",
   "obsidian-lock-screen-plugin",
-  "obsidian-trash-explorer"
+  "obsidian-trash-explorer",
+  "obsidian-latex-suite"
 ]

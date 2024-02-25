@@ -266,9 +266,9 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "dbfolder:Create a new database table": false,
-      "periodic-notes:Open today": false,
       "obsidian-projects:Open projects": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "d80c5e553429a7b6",

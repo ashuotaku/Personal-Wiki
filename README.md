@@ -1,4 +1,12 @@
 
+> [!NOTE]
+> My personal obsidian vault showcase so that you can easily replicate this workflow by cloning this repo and you can suggest me for any changes or file an issue if there's any bug. Btw, I am noob in git and github and my english is also not that great.
+
+> [!NOTE]
+> ### Some tricks:
+> - In editing mode in obsidian press `alt + b` to quickly add a banner from internet.
+> - Add tags like `favorite` or `followup` to make notes appear in the sidebar or you can directly customize the sidebar by editing the sidebar note.
+
 > [!TIP] 
 > ### What's new:
 > Now you can invert image color and make it adaptable with dark theme or light theme using the invert image css snippet:
@@ -8,9 +16,6 @@
 > `![invert_W](your image)`  or `![[your image#invert_W]]` -> for mostly white image
 >
 > `![invert_W_C](your image)` or `![invert_B_C](your image)` or `![[your image#invert_W_C]]` or `![[your image#invert_B_C]]` -> for adding contrast
-
-> [!NOTE]
-> My personal obsidian vault showcase so that you can easily replicate this workflow by cloning this repo and you can suggest me for any changes or file an issue if there's any bug. Btw, I am noob in git and github and my english is also not that great.
 
 > [!TIP]
 > You can also buy me a coffee ☕ if you want for my hardwork: https://www.buymeacoffee.com/ashuotaku
@@ -54,11 +59,11 @@
 4. **BRAT** (for easily downloading beta plugins) (optional)
 5. **Calendar** (for calendar view in sidebar)
 6. **DB Folder** (for notion like databases) (optional)
-7. **Emoji** shortcodes (for quickly adding emoji in notes) (optional)
+7. **Latex Suite Plugin** (to write maths equations seamlessly in obsidian) (very imporant if you are a maths student)
 8. **Excalibrain** and **Excalidraw** (optional)
 9. **Highlightr** (for quickly highlighting notes in different colors) (optional)
 10. **Homepage** (to set homepage to be open at startup) (optional)
-11. **Image Insterter** (to quicly add online images to notes) (optional)
+11. **Image Insterter** (to quickly add online images to notes) (optional)
 12. **Imgur Plugin** (to save storage by adding images to imgur) (optional)
 13. **List callouts** (very beautiful and useful plugin)
 14. **Markdown Attributes** (Not for beginners) (optional)
@@ -74,5 +79,4 @@
 24. **Trash Explorer** (for easily viewing delete notes) (optional)
 25. **Tray** (for making obsidian running in background while adding it in system tray) (optional)
 26. **Update Modified Date** (to automatically update modifcation time of notes in yaml frontmatter)
-
 
