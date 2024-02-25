@@ -31,9 +31,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "d80c5e553429a7b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -115,7 +129,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🙃 Sidebar.md",
+                "file": "README.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -150,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🙃 Sidebar.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +192,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🙃 Sidebar.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,7 +219,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "🙃 Sidebar.md"
+                "file": "README.md"
               }
             }
           },
@@ -215,7 +229,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🙃 Sidebar.md"
+                "file": "README.md"
               }
             }
           },
@@ -252,16 +266,16 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "dbfolder:Create a new database table": false,
+      "periodic-notes:Open today": false,
       "obsidian-projects:Open projects": false,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "periodic-notes:Open today": false
+      "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "23936738aea3f720",
+  "active": "d80c5e553429a7b6",
   "lastOpenFiles": [
     "000 Pinned/🏠 Homepage.md",
-    "README.md",
     "🙃 Sidebar.md",
+    "README.md",
     "🛠️ Practice.md",
     "🧰 Utilities.md",
     "🧠 Excalibrain.md",

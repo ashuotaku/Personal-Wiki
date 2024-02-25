@@ -38,6 +38,6 @@
   "modular-css-layout-mc@@float-callout-snw-display": "inline-block",
   "anuppuccin-theme-settings-extended@@anp-theme-ext-dark": true,
   "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-everforest-light",
-  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-flexoki-dark",
-  "anuppuccin-theme-settings-extended@@anp-theme-ext-amoled": true
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-kanagawa-dark",
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-amoled": false
 }

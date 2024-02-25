@@ -3,14 +3,18 @@
 > ### What's new:
 > Now you can invert image color and make it adaptable with dark theme or light theme using the invert image css snippet:
 >
-> For e.g: `![invert_B](your image)` -> for mostly black image
+> For e.g: `![invert_B](your image)` or `![[your image#invert_B]]` -> for mostly black image
 >
-> `![invert_W](your image)` -> for mostly white image
+> `![invert_W](your image)`  or `![[your image#invert_W]]` -> for mostly white image
 >
-> `![invert_W_C](your image)` or `![invert_B_C](your image)` -> for adding contrast
+> `![invert_W_C](your image)` or `![invert_B_C](your image)` or `![[your image#invert_W_C]]` or `![[your image#invert_B_C]]` -> for adding contrast
 
 > [!NOTE]
 > My personal obsidian vault showcase so that you can easily replicate this workflow by cloning this repo and you can suggest me for any changes or file an issue if there's any bug. Btw, I am noob in git and github and my english is also not that great.
+
+> [!TIP]
+> You can also buy me a coffee ☕ if you want for my hardwork: https://www.buymeacoffee.com/ashuotaku
+> ![qr_code|200](qr.png)
 
 ## My Workflow and Organization:
 #### Folders:
@@ -71,7 +75,4 @@
 25. **Tray** (for making obsidian running in background while adding it in system tray) (optional)
 26. **Update Modified Date** (to automatically update modifcation time of notes in yaml frontmatter)
 
-
-> [!TIP]
-> You can also buy me a coffee ☕ if you want for my hardwork: https://www.buymeacoffee.com/ashuotaku
 
