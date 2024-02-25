@@ -14,7 +14,7 @@
 
 > [!TIP]
 > You can also buy me a coffee ☕ if you want for my hardwork: https://www.buymeacoffee.com/ashuotaku
-> ![qr_code|200](qr.png)
+> <img src='qr.png' width='200'>
 
 ## My Workflow and Organization:
 #### Folders:
