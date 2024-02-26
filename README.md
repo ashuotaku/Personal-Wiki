@@ -59,7 +59,7 @@
 4. **BRAT** (for easily downloading beta plugins) (optional)
 5. **Calendar** (for calendar view in sidebar)
 6. **DB Folder** (for notion like databases) (optional)
-7. **Latex Suite Plugin** (to write maths equations seamlessly in obsidian) (very imporant if you are a maths student)
+7. **Quick Latex Plugin** (to write maths equations seamlessly in obsidian) (very imporant if you are a maths student)
 8. **Excalibrain** and **Excalidraw** (optional)
 9. **Highlightr** (for quickly highlighting notes in different colors) (optional)
 10. **Homepage** (to set homepage to be open at startup) (optional)

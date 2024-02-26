@@ -31,22 +31,9 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "d80c5e553429a7b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,7 +116,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "README.md",
+                "file": "000 Pinned/🏠 Homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -164,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "000 Pinned/🏠 Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "000 Pinned/🏠 Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -219,7 +206,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "README.md"
+                "file": "000 Pinned/🏠 Homepage.md"
               }
             }
           },
@@ -229,7 +216,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "000 Pinned/🏠 Homepage.md"
               }
             }
           },
@@ -271,11 +258,11 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d80c5e553429a7b6",
+  "active": "bcb2c5231acf380b",
   "lastOpenFiles": [
+    "README.md",
     "000 Pinned/🏠 Homepage.md",
     "🙃 Sidebar.md",
-    "README.md",
     "🛠️ Practice.md",
     "🧰 Utilities.md",
     "🧠 Excalibrain.md",
