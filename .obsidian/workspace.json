@@ -31,9 +31,21 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "d2f64d53894e268b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/🔢 Dummy Maths Note.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,8 +106,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -116,7 +127,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -151,7 +161,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -179,7 +188,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 Pinned/🏠 Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,9 +213,7 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "000 Pinned/🏠 Homepage.md"
-              }
+              "state": {}
             }
           },
           {
@@ -215,9 +221,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "000 Pinned/🏠 Homepage.md"
-              }
+              "state": {}
             }
           },
           {
@@ -258,11 +262,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "bcb2c5231acf380b",
+  "active": "a11a1ccc7228f300",
   "lastOpenFiles": [
-    "README.md",
-    "000 Pinned/🏠 Homepage.md",
     "🙃 Sidebar.md",
+    "Maths/🔢 Dummy Maths Note.md",
+    "Attachments/section formula proof.png",
+    "000 Pinned/🏠 Homepage.md",
+    "Attachments/distance formula.png",
+    "Attachments",
+    "Maths",
+    "README.md",
     "🛠️ Practice.md",
     "🧰 Utilities.md",
     "🧠 Excalibrain.md",
@@ -288,15 +297,11 @@
     "Journal/2024/2024-Q1",
     "Journal/2024",
     "Journal/🗓️ Journal.md",
-    "Inputs/📖 Quote Book.md",
-    "Inputs/Youtube/📹 YouTube.md",
     "000 Goals",
     "000 Quick Notes",
     "Pasted image 20240212222426.png",
     "Attachment Notes",
     "Attachment Notes/Untitled",
-    "Attachment Notes",
-    "Pasted image 20240206143632.png",
-    "000 Quick Notes"
+    "Pasted image 20240206143632.png"
   ]
 }

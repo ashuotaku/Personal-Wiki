@@ -9,6 +9,9 @@
 
 > [!TIP] 
 > ### What's new:
+>
+> Check the [dummy maths note](Maths/🔢%20Dummy%20Maths%20Note.md) for maths notes reference.
+>
 > Now you can invert image color and make it adaptable with dark theme or light theme using the invert image css snippet:
 >
 > For e.g: `![invert_B](your image)` or `![[your image#invert_B]]` -> for mostly black image

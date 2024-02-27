@@ -3,5 +3,6 @@
   "propertiesInDocument": "hidden",
   "trashOption": "local",
   "alwaysUpdateLinks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "Attachments"
 }
